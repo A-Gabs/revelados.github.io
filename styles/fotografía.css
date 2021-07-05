@@ -1,0 +1,259 @@
+a {
+	text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+}
+.content {
+	
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav{
+	
+	padding: 20px;
+	background: #4064e6;
+	text-align: center;
+	 margin-bottom: 10px;
+  }
+  
+  header nav a{
+	  width: 100%;
+	  height: 100%;
+	  font-weight: 600;
+	  color: white;
+	  
+	  text-transform: uppercase;
+	  text-decoration: none;  
+	  margin: 15px 10px ;
+  }
+main{
+    margin-top: 50px;
+}
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+#header {
+	padding: 40px 0;
+}
+
+#header .logo {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#header .logo p {
+	color: #9B9B9B;
+}
+
+#header form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#header .barra-busqueda {
+	width: 70%;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+#header .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#header .categorias a {
+	color: #9B9B9B;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+#header .categorias a.activo {
+	color: #000;
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+main .grid {
+	position: relative;
+	
+	margin: 0px 180px;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+main .grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+main .grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+main .grid .item-contenido {
+	position: relative;
+}
+
+main .grid .item img {
+	
+	cursor: pointer;
+	vertical-align: top;
+}
+#uno, #dos{
+	width: 520px;
+	height: 760px;
+}
+
+#tres, #cuatro, #cinco{
+	width: 400px;
+	height: 240px;
+}
+
+
+/* ------------------------- */
+/* Overlay */
+/* ------------------------- */
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.9);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.overlay.activo {
+	display: flex;
+}
+
+.overlay img {
+	max-width: 100%;
+}
+
+.overlay .descripcion {
+	display: block;
+	background: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 5px;
+	border-radius: 10px;
+	max-width: 50%;
+}
+
+.contenedor-img {
+	position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+	background: none;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: -20px;
+	top: -20px;
+}
+/*footer*/
+footer{
+    
+    align-items: center;
+    justify-content: center;
+    background-color: #4064e6;
+
+}
+.divrs{
+    text-align: center;
+    
+}
+
+.divrs a{
+    
+    display: inline-block;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #f8bc00;
+    margin: 10px 8px;
+    transition: .4s linear;
+    position: relative;
+}
+
+.divrs a::before, .divrs a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+}
+
+.divrs a:hover{
+    transform: scale(.8);
+}
+
+.divrs a:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+}
+
+.divrs a:hover::after{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-20deg);
+}
+footer{
+    padding: 8px;
+    
+}
+#div{
+    text-align: center;
+}
+
+#div p{
+    font-size: 10px;
+	color: #f8bc00;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.link{
+border-right: #999 1px solid;
+font-size: 13px;
+padding-right: 5px;
+text-decoration: none; 
+color:black;
+font-weight: 300;
+}

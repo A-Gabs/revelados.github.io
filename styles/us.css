@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+	padding: 0px;   
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:white;
+    justify-content:center ;
+}
+
+
+
+header nav{
+    padding: 20px;
+    background: #4064e6;
+    text-align: center;
+     
+}
+  
+header nav a{
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;  
+    margin: 15px 10px ;
+}
+
+section{
+    margin: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.block{
+    vertical-align: bottom;
+    margin: 50px 0px;
+    text-align: center;
+   
+}
+ video{
+    width: 95%;
+    margin: 20px 50px 0px 50px ;
+    
+}
+.block img{
+    vertical-align: bottom;
+    width: 95%;
+    height: 540px;
+    border-radius: 25px;
+}
+
+.testimonio #audiuno{
+    margin-left: 130px;
+   
+}
+.testimonio #audiodos{
+    margin-left: 130px;
+}
+
+
+#ariana img{
+    width: 100%;
+
+    vertical-align: bottom;
+}
+.testimonio{
+    float: left;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 1540px;
+    
+    
+}
+footer{
+    
+    align-items: center;
+    justify-content: center;
+    background-color: #4064e6;
+
+}
+.divrs{
+    text-align: center;
+    
+}
+
+.divrs a{
+    
+    display: inline-block;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #f8bc00;
+    margin: 10px 8px;
+    transition: .4s linear;
+    position: relative;
+}
+
+.divrs a::before, .divrs a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+}
+
+.divrs a:hover{
+    transform: scale(.8);
+}
+
+.divrs a:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+}
+
+.divrs a:hover::after{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-20deg);
+}
+footer{
+    padding: 8px;
+    
+}
+#div{
+    text-align: center;
+}
+
+#div p{
+    font-size: 10px;
+    color: #f8bc00;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.link{
+border-right: #999 1px solid;
+font-size: 13px;
+padding-right: 5px;
+text-decoration: none; 
+color:black;
+font-weight: 300;
+}
+
+/*audio*/
+div#mp3_player{
+    width: 500px;
+    height: 180px;
+    background: #000;
+    padding: 5px;
+    margin: 50px auto;
+  }
+
+  div#mp3_player > div > audio{
+    width: 500px;
+    background: #000;
+    float: left;
+  }
+
+  div#mp3_player > canvas {
+    width: 500px;
+    height: 150px;
+    background: #002D3C;
+    float: left;
+  }

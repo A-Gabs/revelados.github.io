@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:white;
+    justify-content:center ;
+}
+
+#content{
+    
+    border-radius: 25px;
+    margin: 10px;
+}
+
+header nav{
+    padding: 20px;
+    background:  #4064e6;;
+    text-align: center;
+    
+    margin-bottom: 80px;
+}
+  
+header nav a{
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;  
+    margin: 15px 10px ;
+}
+
+/*podcast*/
+
+.block{
+    vertical-align: bottom;
+    margin: 50px 0px;
+    text-align: center;
+}
+.block img{
+    vertical-align: bottom;
+    width: 95%;
+    height: 540px;
+}
+.audiouno{
+    float: left;
+    position: absolute;
+    margin-left: 1670px;
+    margin-top: 400px;
+    
+}
+.audiodos{
+    float: left;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 400px;
+  
+}
+/*footer*/
+footer{
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #4064e6 ;
+
+}
+.divrs{
+    text-align: center;
+    
+}
+
+.divrs a{
+    
+    display: inline-block;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #f8bc00;
+    margin: 10px 8px;
+    transition: .4s linear;
+    position: relative;
+}
+
+.divrs a::before, .divrs a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+}
+
+.divrs a:hover{
+    transform: scale(.8);
+}
+
+.divrs a:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+}
+
+.divrs a:hover::after{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-20deg);
+}
+footer{
+    padding: 8px;
+    
+}
+#div{
+    text-align: center;
+}
+
+#div p{
+    font-size: 10px;
+    color: #f8bc00;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.link{
+border-right: #999 1px solid;
+font-size: 13px;
+padding-right: 5px;
+text-decoration: none; 
+color:black;
+font-weight: 300;
+}
